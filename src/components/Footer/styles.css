@@ -1,0 +1,28 @@
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.FooterListsAbout {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.listFooter {
+  display: flex;
+}
+
+.listFooter p,
+.listFooter a {
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+}
+
+.listFooter a:hover {
+  text-decoration: solid #fff underline;
+  cursor: pointer;
+}

@@ -1,0 +1,89 @@
+div.SearchBarDivMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 109px;
+  height: 54px;
+  margin-left:8px;
+  padding: 8px 16px;
+  background: #d23228;
+  border: none;
+  cursor: pointer;
+}
+
+button.submitBtn:hover {
+  background-color: #860b02;
+}
+
+.submitBtn span {
+  font-size: 25px;
+  color: white;
+  display: flex;
+}
+
+div.ExploreAllCourses {
+  margin-top: 25px;
+  text-align: left;
+}
+
+a.ExploreAllCoursesLink {
+  color: ivory;
+  text-decoration: underline;
+  text-decoration-color: ivory;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+input#inputSearchBarMain {
+  display: flex;
+  align-items: center;
+  width: 276px;
+  height: 54px;
+  line-height: 43px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainContent {
+  display: block;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+img#mainBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -25%;
+  width: 150%;
+  height: 470px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mainElementsTop {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+h1 {
+  white-space: nowrap ;
+}

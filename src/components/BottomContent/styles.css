@@ -1,0 +1,243 @@
+.BottomContentMain {
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.BottomContentTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+.BottomContentTitleH3 {
+  display: flex;
+  font-size: 32px;
+  margin-right: 30px;
+  font-weight: 400;
+}
+
+.BottomContentTitleA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  color: #808080;
+  cursor: pointer;
+}
+
+.BottomContentTitleA:hover {
+  text-decoration: solid black 1px underline;
+}
+
+.BottomContentTitleA span {
+  display: flex;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.containerItemSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonBottomContentGeneric {
+  display: inline-block;
+  font-weight: 500;
+  background-color: transparent;
+  margin-right: 33px;
+  color: rgb(115, 115, 115);
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.buttonBottomContentGeneric:hover {
+  background-color: rgba(23, 138, 196, 0.2);
+  color: rgba(0, 135, 202, 1)
+}
+
+.buttonBottomContentGeneric::after {
+  content: '';
+  position: absolute;
+  width:calc(100% + 35px);
+  height: 4px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  opacity: 0.5;
+}
+
+.buttonBottomContentGeneric.selected::after {
+  background-color: #0087ca;
+  opacity: 1;
+}
+
+.buttonBottomContent:hover::after {
+  opacity: 1;
+}
+
+.itemContainerTitle {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectPlannerTitleH3Bot {
+  display:flex;
+  justify-content: left;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.ProjectPLannerPBot {
+  margin: 10px 0;
+}
+
+.itemContainerProjectPlanner {
+  display: flex;
+  justify-content: center;
+  width: 1344px;
+  height: 590px;
+  margin-top: 20px;
+  border: solid grey 1px;
+  border-radius: 10px;
+}
+
+.mainContentProjectPlanner {
+  margin-top: 100px;
+}
+
+.mainContentTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.graph1Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.graph1 {
+  display: flex;
+  width: 245px;
+  height: 32px;
+  background-color: #E0E0E0;
+  border-radius: 4px;
+}
+
+.graph1Span {
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.graph1Salary {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.graph2Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.graph2 {
+  display: flex;
+  width: 400px;
+  height: 32px;
+  background-color: rgb(14, 86, 122);
+  border-radius: 4px;
+}
+
+.graph2Span {
+  display: flex;
+  color:#E0E0E0;
+  justify-content: left;
+  margin-left: 15px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.graph2Salary {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.containerExamplePerson {
+  display: flex;
+  text-align: unset;
+}
+
+.divContainerExamplePerson {
+  display: block;
+}
+
+.imgContainerExamplePerson {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.quoteContainer {
+  margin-top: 15px;
+}
+
+.certificates {
+  display: flex;
+  gap: 15px;
+}
+
+a.baseCertificate {
+  display: inline-block;
+  width: 312px;
+  height: 416px;
+  box-sizing: border-box;
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 8px 0 #00000026, 0 2px 44px 0 #00000026;
+  position: relative;
+  background-color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+}
+
+a.baseCertificate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px 0 #00000026, 0 4px 88px 0 #00000026;
+
+}
+
+img.imgCertificate {
+  width:312px;
+  height:254px;
+  position: relative;
+  z-index: 1;
+}
+
+.headerCertificate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  color:black;
+}
+
+.headerCertificate span {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}

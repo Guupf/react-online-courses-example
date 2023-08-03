@@ -1,0 +1,90 @@
+.h2BotWrapper {
+  line-height: 1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exploreTopCourses {
+  background: #f2f0ef;
+  padding-left: 145px;
+  padding-bottom: 3rem;
+}
+
+.container {
+  position: relative;
+  padding: 15px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.galleryWrapper {
+  overflow-x: hidden;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+li.liTopCourses {
+  display:flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  text-decoration: none;
+}
+
+.imgItem {
+  width: 230px;
+  height: 230px;
+  border: 1px solid black;
+}
+
+a.item.current {
+  transform: scale(1.1); 
+}
+
+.arrowLeftControl,
+.arrowRightControl {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px; 
+  margin-top: -20px; 
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+}
+
+.arrowRightControl {
+  right:0;
+  left: auto;
+  text-align: right;
+}
+
+.genericButtonImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+}
+
+.spanGalleryItem {
+  display: flex;
+  justify-content: center;
+  color: black;
+}

@@ -1,0 +1,200 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+div.brandLogo {
+  display: flex;
+  font-size:25px;
+  height: 76px;
+  align-items: center !important;
+}
+
+img#companyLogo {
+  width: 38px;
+  height: 38px;
+  margin-left: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: ivory;
+  font-size:70px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+i.adjustHeader1 {
+  display:flex;
+  align-items: center;
+}
+
+div.header1 {
+  color: #001b1e;
+  width:100%;
+  font-family: Inter,Helvetica Neue,Arial,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row wrap;
+  height: 76px;
+}
+
+div.header1 a {
+  color: black;
+  text-decoration: none;
+}
+
+a.menuItem:hover,
+a.spanSignIn:hover {
+  text-decoration: underline;
+}
+
+li.menuLink {
+  text-align: -webkit-match-parent;
+  display: list-item;
+  border: none;
+  float: left;
+  padding: 0;
+  width: auto;
+  margin-right: 40px;
+}
+
+div.primaryMenuBar {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+ul.primaryMenuUl {
+  display:flex;
+  align-items: center;
+}
+
+.navBarGroup {
+  display: inline;
+}
+
+.btnIconMenu {
+  display: inline;
+  padding-bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+div.SearchBarDivTop {
+  align-items: center;
+  display:flex;
+}
+
+div.desktopSearchBar {
+  display: flex;
+  align-items: center;
+}
+
+nav.userActions {
+  align-items: center;
+  display: flex;
+  background-color: rgb(242, 240, 239);
+  margin-left: 45px;
+  position: relative;
+}
+
+nav.userActions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -17px;
+  bottom: 0;
+  width: 25px; 
+  background-color: rgb(242, 240, 239);
+  transform: skew(-12deg); 
+}
+
+.btnRegister {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #d23228;
+  border: 1px solid;
+  border-color: #d23228;
+  box-shadow: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.btnRegister:hover {
+  background-color: #8a2119;
+}
+
+div.spanRegister {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+input#inputSearchBar {
+  display: flex;
+  position:relative;
+  align-items: center !important;
+  width: 272px;
+  height: 54px;
+  line-height: 43px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #001b1e;
+}
+
+@media screen and (max-width: 768px) {
+  div.header1 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  div.brandLogo {
+    margin-bottom: 10px;
+  }
+
+  div.desktopSearchBar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  div.learnMore {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.header1 {
+    justify-content: space-between;
+  }
+
+ div.primaryMenuBar {
+  flex-grow: 1;
+ }
+
+
+ nav.userActions {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+}
