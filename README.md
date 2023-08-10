@@ -18,4 +18,6 @@ Includes:
 - A component for course selection with 6 options;
 - An image carousel with fictional courses.
 
+---
+
 Vercel: https://react-native-courses-guupf.vercel.app/
